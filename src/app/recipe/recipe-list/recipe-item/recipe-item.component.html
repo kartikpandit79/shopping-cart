@@ -1,0 +1,23 @@
+<a
+    style= "cursor: pointer"
+    [routerLink]="[index]"
+    routerLinkActive="active"
+    class="list-group-item clearfix"
+    >
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{recipesItemList.name}}</h4>
+        <p class="list-group-item-text">{{recipesItemList.desc}}</p>
+      </div>
+      <span class="pull-right">
+        <img [src]="recipesItemList.imagePath"
+        alt="{{recipesItemList.name}}"
+        title="{{recipesItemList.desc}}"
+        class="img-responsive"
+        style="max-height:70px">
+      </span>
+    </a>
+
+
+    <!-- <a routerLink = "itemList">
+      (click)="onToSelect()"
+    </a> -->

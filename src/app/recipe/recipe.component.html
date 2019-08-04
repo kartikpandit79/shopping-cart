@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <app-recipe-list></app-recipe-list>
+    </div>
+    <br>
+    <div class="col-md-7">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<!-- lect 159 -->
+<!-- <app-recipe-details
+*ngIf="toRecipeDetails; else second"
+[selectedRecipe]="toRecipeDetails"></app-recipe-details>
+<ng-template #second>
+  <p>No Recipe selected</p>
+</ng-template> -->
+
+
+<!-- lect 117 (sentRecipe)="onRecRecipe($event)" -->
